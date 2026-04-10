@@ -270,8 +270,19 @@ body {
   margin: 0;
 }
 
+body::before {
+  content: "";
+  width: 42%;
+  background-color: #2e2f38;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
 .page {
-  max-width: 1300px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
@@ -328,7 +339,7 @@ body {
 }
 
 .sign-in a{
-  color: #000;
+  color: white;
 }
 
 main {
@@ -390,4 +401,60 @@ main {
   width: 48%;
   border: 1px solid #8e8e8e;
   padding: 4px;
+}
+
+.nft {
+  grid-column: 2/span 1;
+  grid-row: 1/span 2;
+}
+
+.nft__image {
+  max-width: 100%;
+
+}
+
+.nft__data {
+  background-color: white;
+  padding: 15px;
+  position: relative;
+  margin-top: -30px;
+  margin-bottom: 40px;
+}
+
+.nft__header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border: solid black 1px;
+}
+
+.nft__owner {
+  display: flex;
+}
+
+.owner__user {
+  color: var(--secundary-color);
+  font-family: var(--primary-font);
+}
+
+.nft__owner-data {
+  line-height: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-left:15px ;
+  justify-content: space-between;
+}
+
+.owner__name {
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nft__price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
