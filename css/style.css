@@ -333,6 +333,10 @@ body::before {
 
 }
 
+.main-menu a:hover {
+  color: var(--terciary-color);
+}
+
 .sign-up a{
   background-color: var(--terciary-color);
   color: white;
