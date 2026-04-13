@@ -422,7 +422,7 @@ main {
   padding: 15px;
   position: relative;
   margin-top: -30px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .nft__header {
@@ -440,6 +440,7 @@ main {
 .owner__user {
   color: var(--secundary-color);
   font-family: var(--primary-font);
+  font-size: 18px;
 }
 
 .nft__owner-data {
@@ -447,18 +448,80 @@ main {
   display: flex;
   flex-direction: column;
   margin-left:15px ;
-  justify-content: space-between;
+  margin-top: 10px;
+
 }
 
 .owner__name {
   color: var(--primary-color);
   font-family: var(--primary-font);
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
 }
 
 .nft__price {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  line-height: 5px;
+  margin-top: 10px;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+
+.current_bid {
+  color: var(--secundary-color);
+  font-family: var(--primary-font);
+  font-size: 18px;
+}
+
+.nft__price .price {
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.nft__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-family: var(--primary-font);
+}
+
+.nft__buttons .button {
+  color: white;
+  background-color: var(--terciary-color);
+  padding: 10px 50px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.nft__buttons .artwork {
+  color: var(--terciary-color);
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  padding: 10px 50px;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.nft__numbers {
+  display: flex;
+  font-family: var(--primary-font);
+  color: white;
+  font-size: 14px;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  align-content: center;
+  font-weight: 300;
+  margin-bottom: 40px;
+
+}
+
+.number span {
+  color: var(--terciary-color);
+  font-size: 24px;
+  font-weight: 600;
 }
