@@ -318,6 +318,10 @@ body::before {
   font-weight: 400;
 }
 
+.main-menu a:hover {
+  color: var(--terciary-color);
+}
+
 
 .sig-in-menu ul{
   display: flex;
